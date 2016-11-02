@@ -131,6 +131,73 @@ namespace Hangman.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to adgang
+        ///advarsel
+        ///alternativ
+        ///anger
+        ///angst
+        ///anledning
+        ///avskjed
+        ///avsky
+        ///avstand
+        ///banking
+        ///begynnelse
+        ///behov
+        ///bekymring
+        ///benevnelse
+        ///beretning
+        ///beskjed
+        ///beskrivelse
+        ///betegnelse
+        ///betingelse
+        ///betydning
+        ///bevis
+        ///bevissthet
+        ///bilde
+        ///blanding
+        ///blikk
+        ///blomstring
+        ///bok
+        ///bror
+        ///bru
+        ///brudd
+        ///bruker
+        ///bunke
+        ///bønn
+        ///del
+        ///drag
+        ///drap
+        ///dreiing
+        ///dronning
+        ///duft
+        ///eksamen
+        ///eksemplar
+        ///ende
+        ///enighet
+        ///erfaring
+        ///erkjennelse
+        ///erstatning
+        ///etterspørsel
+        ///far
+        ///fare
+        ///farge
+        ///film
+        ///flokk
+        ///flukt
+        ///forbud
+        ///fordel
+        ///forespørsel
+        ///forhold
+        ///forkjemper
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string NORwords {
+            get {
+                return ResourceManager.GetString("NORwords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap rightArm {

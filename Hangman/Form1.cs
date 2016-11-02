@@ -16,65 +16,63 @@ namespace Hangman
 		{
 			InitializeComponent();
 		}
-
+		char[] theAnswer;
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			List<Button> buttonList = new List<Button>();
+			// Generate the "keyboard"
+			List<Button> keyboardList = new List<Button>();
 			List<Char> alphabet = new List<Char>();
 			string letters = "qwertyuiopåasdfghjkløæzxcvbnm".ToUpper();
 			foreach (char c in letters) alphabet.Add(c);
 
-			int i = 0;
+			int listCount = 0;
+			
 			for (int j = 0; j < 3; j++)
 			{
-				for (; i < alphabet.Count; i++)
+				for (int i = 0; i < 11; i++)
 				{
-					buttonList.Add(new Button());
-					buttonList.Last().Text = alphabet[i].ToString();
-					buttonList.Last().Location = new Point(((i%11 + 1) * 23) + 12, (j * 28) +220);
-					buttonList.Last().Height = 25;
-					buttonList.Last().Width = 20;
-					buttonList.Last().Visible = true;
+					keyboardList.Add(new Button());
+					keyboardList.Last().Text = alphabet[listCount].ToString();
+					keyboardList.Last().Location = new Point(i * 23 + 12, j * 28 + 220);
+					keyboardList.Last().Height = 25;
+					keyboardList.Last().Width = 20;
+					
+					keyboardList.Last().Click += new EventHandler(alphabet_click);
 
-					this.Controls.Add(buttonList[i]);
+					
+					this.Controls.Add(keyboardList[listCount]);
+					listCount++;
 				}
 			}
-		/*
-			for (int i = 0; i < 11; i++)
+			// Keyboard done
+
+			//Pick a word (for single-player)
+			string[] words = System.IO.File.ReadAllLines(@"\Resources\NORwords.txt");
+			Random rng = new Random();
+			theAnswer = words[rng.Next(0, words.Length)].ToCharArray();
+
+			// Generates the bunch of buttons that are the answer
+			List<Button> answerDisplayList = new List<Button>();
+			for (int i = 0; i < theAnswer.Length; i++)
 			{
-				buttonList.Add(new Button());
-				buttonList.Last().Text = alphabet[i].ToString();
-				buttonList.Last().Location = new Point((i * 23) + 12,  220);
-				buttonList.Last().Height = 25;
-				buttonList.Last().Width = 20;
-				buttonList.Last().Visible = true;
+				answerDisplayList.Add(new Button());
+				answerDisplayList.Last().Location = new Point(i * 23 + 13, 48);
+				keyboardList.Last().Height = 25;
+				keyboardList.Last().Width = 20;
+				keyboardList.Last().Enabled = false;
 
-				this.Controls.Add(buttonList[i]);
+				this.Controls.Add(keyboardList[i]);
 			}
-		for (int i = 11; i < 22; i++)
-		{
-			buttonList.Add(new Button());
-			buttonList.Last().Text = alphabet[i].ToString();
-			buttonList.Last().Location = new Point(((i -11)*23) + 12, (35) + 220);
-			buttonList.Last().Height = 25;
-			buttonList.Last().Width = 20;
-			buttonList.Last().Visible = true;
-
-			this.Controls.Add(buttonList[i]);
 		}
-		for (int i = 22; i < 29; i++)
+
+		private void alphabet_click(Object sender, EventArgs e)
 		{
-			buttonList.Add(new Button());
-			buttonList.Last().Text = alphabet[i].ToString();
-			buttonList.Last().Location = new Point(((i -22)*23) + 12, (2 * 35) + 220);
-			buttonList.Last().Height = 25;
-			buttonList.Last().Width = 20;
-			buttonList.Last().Visible = true;
-
-			this.Controls.Add(buttonList[i]);
+			Button clickedButton = (Button)sender;
+			char guess = clickedButton.Text[0]; // get the actual char pressed
+			for (int i = 0; i < theAnswer.Length; i++)
+			{
+				
+			}
 		}
-		*/
-
-	}
 	}
 }

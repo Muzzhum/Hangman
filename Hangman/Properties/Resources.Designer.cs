@@ -61,76 +61,6 @@ namespace Hangman.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _base {
-            get {
-                object obj = ResourceManager.GetObject("_base", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap arm {
-            get {
-                object obj = ResourceManager.GetObject("arm", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap back {
-            get {
-                object obj = ResourceManager.GetObject("back", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap crossbar {
-            get {
-                object obj = ResourceManager.GetObject("crossbar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap head {
-            get {
-                object obj = ResourceManager.GetObject("head", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap leftArm {
-            get {
-                object obj = ResourceManager.GetObject("leftArm", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap leftLeg {
-            get {
-                object obj = ResourceManager.GetObject("leftLeg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to adgang
         ///advarsel
         ///alternativ
@@ -200,9 +130,9 @@ namespace Hangman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rightArm {
+        internal static System.Drawing.Bitmap stage00 {
             get {
-                object obj = ResourceManager.GetObject("rightArm", resourceCulture);
+                object obj = ResourceManager.GetObject("stage00", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -210,9 +140,9 @@ namespace Hangman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rightLeg {
+        internal static System.Drawing.Bitmap stage01 {
             get {
-                object obj = ResourceManager.GetObject("rightLeg", resourceCulture);
+                object obj = ResourceManager.GetObject("stage01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -220,9 +150,9 @@ namespace Hangman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rope {
+        internal static System.Drawing.Bitmap stage02 {
             get {
-                object obj = ResourceManager.GetObject("rope", resourceCulture);
+                object obj = ResourceManager.GetObject("stage02", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -230,9 +160,9 @@ namespace Hangman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sadface {
+        internal static System.Drawing.Bitmap stage03 {
             get {
-                object obj = ResourceManager.GetObject("sadface", resourceCulture);
+                object obj = ResourceManager.GetObject("stage03", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -240,9 +170,79 @@ namespace Hangman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stem {
+        internal static System.Drawing.Bitmap stage04 {
             get {
-                object obj = ResourceManager.GetObject("stem", resourceCulture);
+                object obj = ResourceManager.GetObject("stage04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage05 {
+            get {
+                object obj = ResourceManager.GetObject("stage05", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage06 {
+            get {
+                object obj = ResourceManager.GetObject("stage06", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage07 {
+            get {
+                object obj = ResourceManager.GetObject("stage07", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage08 {
+            get {
+                object obj = ResourceManager.GetObject("stage08", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage09 {
+            get {
+                object obj = ResourceManager.GetObject("stage09", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage10 {
+            get {
+                object obj = ResourceManager.GetObject("stage10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stage11 {
+            get {
+                object obj = ResourceManager.GetObject("stage11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

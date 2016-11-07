@@ -31,15 +31,14 @@
 			this.HangmanPB = new System.Windows.Forms.PictureBox();
 			this.resultLbl = new System.Windows.Forms.Label();
 			this.wrongGuessLbl = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
+			this.RestartBtn = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.HangmanPB)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// HangmanPB
 			// 
 			this.HangmanPB.BackColor = System.Drawing.Color.White;
-			this.HangmanPB.BackgroundImage = global::Hangman.Properties.Resources._base;
-			this.HangmanPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.HangmanPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.HangmanPB.InitialImage = null;
 			this.HangmanPB.Location = new System.Drawing.Point(299, 12);
 			this.HangmanPB.Name = "HangmanPB";
@@ -67,14 +66,15 @@
 			this.wrongGuessLbl.Size = new System.Drawing.Size(0, 17);
 			this.wrongGuessLbl.TabIndex = 2;
 			// 
-			// button1
+			// RestartBtn
 			// 
-			this.button1.Location = new System.Drawing.Point(13, 48);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 3;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
+			this.RestartBtn.Location = new System.Drawing.Point(218, 105);
+			this.RestartBtn.Name = "RestartBtn";
+			this.RestartBtn.Size = new System.Drawing.Size(75, 23);
+			this.RestartBtn.TabIndex = 3;
+			this.RestartBtn.Text = "Restart";
+			this.RestartBtn.UseVisualStyleBackColor = true;
+			this.RestartBtn.Click += new System.EventHandler(this.RestartBtn_Click);
 			// 
 			// Form1
 			// 
@@ -82,7 +82,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.ClientSize = new System.Drawing.Size(551, 344);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.RestartBtn);
 			this.Controls.Add(this.wrongGuessLbl);
 			this.Controls.Add(this.resultLbl);
 			this.Controls.Add(this.HangmanPB);
@@ -100,7 +100,7 @@
 		private System.Windows.Forms.PictureBox HangmanPB;
 		private System.Windows.Forms.Label resultLbl;
 		private System.Windows.Forms.Label wrongGuessLbl;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button RestartBtn;
 	}
 }
 

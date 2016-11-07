@@ -61,7 +61,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,43 +81,43 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arm.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\base.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\crossbar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\head.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\leftArm.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\leftLeg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rightArm.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rightLeg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rope.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sadface.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\stem.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\NORwords.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
